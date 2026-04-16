@@ -1,0 +1,117 @@
+.projects-page {
+  padding: 60px 0 80px;
+}
+
+.projects-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+  gap: 2.5rem;
+}
+
+.project-card {
+  position: relative;
+  transition: all 0.3s;
+  overflow: hidden;
+}
+
+.project-card:hover {
+  border-color: var(--gold-primary);
+  transform: translateY(-8px);
+}
+
+.project-number {
+  position: absolute;
+  top: -10px;
+  right: 20px;
+  font-size: 5rem;
+  font-weight: bold;
+  background: var(--gradient-gold);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  opacity: 0.15;
+  line-height: 1;
+}
+
+.project-card h3 {
+  font-size: 1.4rem;
+  color: var(--text-dark);
+  margin-bottom: 1rem;
+  position: relative;
+  z-index: 2;
+  line-height: 1.4;
+}
+
+.project-metrics {
+  display: inline-block;
+  padding: 0.4rem 1rem;
+  background: var(--gradient-gold);
+  color: var(--bg-white);
+  border-radius: 20px;
+  font-size: 0.85rem;
+  font-weight: 600;
+  margin-bottom: 1rem;
+}
+
+.project-description {
+  color: var(--text-gray);
+  margin-bottom: 1.5rem;
+  line-height: 1.7;
+  font-size: 1rem;
+}
+
+.project-tags {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.6rem;
+  margin-bottom: 1.5rem;
+}
+
+.tag {
+  padding: 0.4rem 1rem;
+  background: var(--gradient-subtle);
+  color: var(--gold-dark);
+  border-radius: 20px;
+  font-size: 0.85rem;
+  border: 1px solid var(--gold-primary);
+  font-weight: 500;
+  transition: all 0.3s;
+}
+
+.tag:hover {
+  background: var(--gradient-gold);
+  color: var(--bg-white);
+}
+
+.project-link {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.5rem;
+  color: var(--gold-primary);
+  text-decoration: none;
+  font-weight: 600;
+  transition: all 0.3s;
+  padding: 0.6rem 1.2rem;
+  border: 2px solid var(--gold-primary);
+  border-radius: 8px;
+}
+
+.project-link:hover {
+  background: var(--gradient-gold);
+  color: var(--bg-white);
+  transform: translateX(5px);
+}
+
+.project-link i {
+  font-size: 1.2rem;
+}
+
+@media (max-width: 768px) {
+  .projects-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .project-number {
+    font-size: 4rem;
+  }
+}
