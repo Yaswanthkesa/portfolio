@@ -21,7 +21,7 @@ const Navbar = () => {
     <nav className="navbar">
       <div className="container">
         <Link to="/" className="nav-brand">
-          Yaswanth Kesa
+          Kesa Veera Venkata Yaswanth
         </Link>
         <ul className={`nav-menu ${isOpen ? 'active' : ''}`}>
           {navItems.map((item) => (
